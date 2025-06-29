@@ -300,6 +300,31 @@
     margin: 0 rem;
     white-space: nowrap;
   }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  /* Desktop: nav links in a row */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+    
+      .nav-links.active {
+        display: flex;
+      }
+  
+      .cta-button {
+        font-size: 0.9rem;
+      }
+    .mobile-nav {
+      display: none;
+    }
   
   @keyframes pulse {
     0% { opacity: 0.2; }
@@ -317,6 +342,25 @@
       position: relative;
       justify-content: space-between;
       padding: 0.8rem 1rem;
+    }
+    .nav-links {
+      display: none; /* hide by default on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: #111;
+      padding: 1rem;
+      border-radius: 8px;
+      z-index: 999;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-right {
+      display: none;
     }
   
     .nav-left {
@@ -350,34 +394,8 @@
       text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
       font-weight: 600;
     }
-  
-    .nav-right {
-      display: none; /* Optional: hide top nav links on mobile */
-    }
 }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-      position: absolute;
-      top: 70px;
-      right: 20px;
-      background: #111;
-      padding: 1rem;
-      border-radius: 8px;
-      display: none;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
 
-    .cta-button {
-      font-size: 0.9rem;
-    }
-  .mobile-nav {
-    display: none;
-  }
   
   @media (max-width: 768px) {
     .mobile-nav {
@@ -402,5 +420,25 @@
   
     .mobile-nav a:hover {
       transform: scale(1.2);
+    }
+  }
+  .typewriter-box {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ff3333;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .typewriter-box {
+      display: block;
+    }
+  
+    .nav-center {
+      display: none; /* Hide the big motivation line on mobile */
     }
   }
