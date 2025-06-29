@@ -59,4 +59,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     }
   }
   
-  typeEffect();
+  if (typeTarget) {
+    typeEffect();
+  } else {
+    console.warn("⚠️ .typewriter-text element not found");
+  }
