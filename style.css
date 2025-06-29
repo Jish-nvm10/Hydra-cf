@@ -313,35 +313,47 @@
       font-size: 2.5rem;
     }
 
-  .nav-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
-    width: max-content;
-  }
-
-  .nav-tagline {
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem; /* Adds spacing between logo and "Hydra CF" */
-  }
-
-  .nav-logo {
-    width: 30px; /* Optional: Resize logo slightly for mobile */
-    height: auto;
-  }
-
-  .nav-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    margin-left: 0; /* Remove extra left margin if any */
-  }
+    .navbar {
+      position: relative;
+      justify-content: space-between;
+      padding: 0.8rem 1rem;
+    }
+  
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; /* Fixes spacing between logo & "Hydra CF" */
+    }
+  
+    .nav-logo {
+      width: 30px;
+      height: auto;
+    }
+  
+    .nav-title {
+      font-size: 1rem;
+      margin: 0;
+      color: #fff;
+      font-weight: bold;
+    }
+  
+    .nav-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+  
+    .nav-tagline {
+      font-size: 0.8rem;
+      color: #ff3333;
+      text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+      font-weight: 600;
+    }
+  
+    .nav-right {
+      display: none; /* Optional: hide top nav links on mobile */
+    }
 }
   
     .nav-links {
@@ -359,11 +371,7 @@
     .nav-links.active {
       display: flex;
     }
-  
-    .nav-title {
-      font-size: 1rem;
-    }
-  
+
     .cta-button {
       font-size: 0.9rem;
     }
