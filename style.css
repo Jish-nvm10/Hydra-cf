@@ -52,7 +52,7 @@
   .nav-center {
     flex: 1;
     justify-content: center;
-    margin-left: 27rem; /* adjust this value */
+    margin-left: 25rem; /* adjust this value */
   }
   .nav-links li a {
     color: #f33;
