@@ -64,9 +64,3 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   } else {
     console.warn("⚠️ .typewriter-text element not found");
   }
-  // Registration confirmation (temporary placeholder)
-document.querySelector(".registration-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("✅ Registration submitted! We'll get in touch soon.");
-  this.reset(); // clear form
-});
