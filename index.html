@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hydra CF | FC Mobile Esports</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -161,21 +161,24 @@
       <!-- Submit -->
       <button type="submit">Register Now</button>
     </form>
-
-    <p class="form-note">We'll contact you via WhatsApp or in-game if you're selected.</p>
   </section>
 
   <!-- JOIN US SECTION -->
   <section id="contact" class="section" data-aos="fade-up">
     <h2>Join Hydra CF</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Why do you want to join Hydra CF?" required></textarea>
+    <form class="contact-form" action="https://formsubmit.co/cfhydra@gmail.com" method="POST">
+     
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://jish-nvm10.github.io/Hydra-cf/thanks-join.html">
+  
+  
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="tel" name="Phone Number" placeholder="Phone Number" required />
+      <textarea name="Why Join?" placeholder="Why do you want to join Hydra CF?" rows="4" required></textarea>
+  
       <button type="submit">Send Request</button>
     </form>
   </section>
-
   <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Hydra CF. All rights reserved.</p>
