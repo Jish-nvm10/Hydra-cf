@@ -99,36 +99,7 @@
 
   <!-- TOURNAMENT SECTION -->
   <section id="tournaments" class="section" data-aos="fade-left">
-    <h2>🔥 Upcoming Tournaments</h2>
-    <div class="tournament-box">
-        <h3>⚽ FC Mobile Clash - July Edition</h3>
-        <p><strong>Date:</strong> July 20, 2025</p>
-        <p><strong>Time:</strong> 7:00 PM IST</p>
-        <p><strong>Format:</strong> Knockout (1v1 VS Attack)</p>
-        <p><strong>Platform:</strong> FC Mobile</p>
-        <p><strong>Entry Fee:</strong> Free</p>
-        <p><strong>Prize:</strong> ₹500 PayTM + MVP Insta Feature</p>
-        <ul>
-          <li>No hacks/scripts/mods allowed</li>
-          <li>Screenshot proof required post-match</li>
-          <li>Indian players only. Main accounts only.</li>
-        </ul>
-        <p class="note">Registrations Opening Soon</p>
-      </div>
-  
-      <div class="tournament-box">
-        <h3>🏆 Hydra Weekly Friendly Cup</h3>
-        <p><strong>Date:</strong> Every Sunday</p>
-        <p><strong>Time:</strong> 9:00 PM IST</p>
-        <p><strong>Format:</strong> Team vs Team (4 Rounds)</p>
-        <p><strong>Entry:</strong> Invite Only</p>
-        <p><strong>Reward:</strong> MVP Role on Discord</p>
-        <ul>
-          <li>Streamed on YouTube (if available)</li>
-          <li>Lineup must be submitted before match</li>
-        </ul>
-      </div>
-
+    <h2>🔥 On-going Tournaments</h2>
     <div class="tournament-box">
       <h3>📈 Hydra Nations League</h3>
       <p><strong>Status:</strong> Registration Open</p>
@@ -146,21 +117,38 @@
   </section>
   <section id="registration" class="section" data-aos="fade-up">
     <h2>Register for Hydra Nations League</h2>
-    <p>Take your shot at glory. Sign up now and represent!</p>
+    <p style="color: #ccc;">
+      Please <strong style="color: #ff3333;">pay ₹20</strong> using the link below before submitting the form.
+      After payment, upload the <strong>payment screenshot</strong> as proof.
+    </p>
   
-    <form class="registration-form" action="https://formsubmit.co/cfhydra@gmail.com" method="POST">
-      <!-- Hidden fields -->
+    <!-- Payment Link -->
+    <div style="text-align: center; margin: 20px 0;">
+      <a href="upi://pay?pa=jishnu.0728@okicici&pn=Raj&am=20.00&cu=INR" target="_blank"
+         style="background: #ff3333; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+        Pay ₹20 Now
+      </a>
+      <p style="margin-top: 10px; color: #999;">* After payment, upload the screenshot below</p>
+    </div>
+  
+    <!-- Form -->
+    <form class="registration-form" action="https://formsubmit.co/cfhydra@gmail.com" method="POST" enctype="multipart/form-data">
+      <!-- Hidden -->
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://jish-nvm10.github.io/Hydra-cf/thanks.html">
-    
-      <!-- Input fields -->
+      <input type="hidden" name="_next" value="https://hydracf.netlify.app/thanks.html">
+  
+      <!-- Input Fields -->
       <input type="text" name="Full Name" placeholder="Full Name" required />
       <input type="tel" name="Phone Number" placeholder="Phone Number" required />
       <input type="text" name="Account UID" placeholder="Account UID Number" required />
-    
-      <!-- Submit -->
-      <button type="submit">Register Now</button>
+  
+      <!-- Screenshot Upload -->
+      <input type="file" name="Payment Screenshot" accept="image/*" required />
+  
+      <button type="submit">Submit Registration</button>
     </form>
+  
+    <p class="form-note" style="margin-top: 1rem;">Registrations without a valid ₹20 payment screenshot will not be accepted.</p>
   </section>
 
   <!-- JOIN US SECTION -->
