@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <title>FC Mobile Registration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #121212;
+  color: #f33;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.registration-form input {
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+}
+
+.registration-form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 50, 50, 0.5);
+}
+
+.registration-form button {
+  align-self: center;
+  background: #f33;
+  color: white;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.registration-form button:hover {
+  background: white;
+  color: #f33;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 1rem;
+}
+.tournament-section {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.tournament-section h2 {
+  font-size: 1.5rem;
+  color: #ff3333;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.tournament-box {
+  background-color: #111;
+  border: 1px solid #ff3333;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.tournament-box h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.tournament-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 4px 0;
+}
+  </style>
+</head>
+<body>
+  <h1>FC Mobile Tournament Registration</h1>
+  <div class="tournament-section">
+    <h2>🔥 On-going Tournaments</h2>
+    <div class="tournament-box">
+      <h3>📈 Hydra Club Tournament</h3>
+      <p><strong>Status:</strong> Registrations over</p>
+      <p><strong>Format:</strong> League + Knockouts</p>
+    </div>
+  </div>
+  </div>
+  <form  class="registration-form" action="https://formsubmit.co/cfhydra@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="text" name="uid" placeholder="Account UID number" required>
+    <button type="button" onclick="window.open('https://drive.google.com/drive/folders/1ecmtGAHaWu-MlrtV6lf8MVTEngzWySne', '_blank')">
+        Upload Screenshot
+      </button>
+    <button type="submit">Submit Registration</button>
+  </form>
+
+
+</body>
+</html>

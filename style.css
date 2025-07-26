@@ -514,3 +514,34 @@
       display: none; /* Hide the big motivation line on mobile */
     }
   }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+  }
+  
+  .tournament-link {
+    text-decoration: none !important;
+    background-color: #ff3333;
+    color: white !important;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: 0.3s ease;
+    width: 250px; /* FIX: same width */
+    text-align: center;
+
+  }
+  
+  .tournament-link:hover {
+    background-color: #ff5555;
+    transform: scale(1.05);
+  }
