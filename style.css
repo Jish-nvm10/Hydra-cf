@@ -545,3 +545,49 @@
     background-color: #ff5555;
     transform: scale(1.05);
   }
+  /* Announcement Section */
+.announcement {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  border-top: 2px solid #f33;
+  border-bottom: 2px solid #f33;
+  margin: 0 auto;
+}
+
+.announcement-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #ff3333;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(255, 50, 50, 0.8);
+}
+
+.announcement-box {
+  display: flex;
+  justify-content: center;
+}
+
+.announcement-img {
+  width: 100%;
+  max-width: 600px;   /* ✅ keeps it smaller on laptops */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.announcement-img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .announcement-title {
+    font-size: 1.5rem;
+  }
+
+  .announcement-img {
+    max-width: 95%;
+  }
+}
